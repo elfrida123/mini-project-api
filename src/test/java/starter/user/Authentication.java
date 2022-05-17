@@ -21,15 +21,15 @@ public class Authentication {
     @Step("I send POST HTTP Request for register")
     public void sendPostHttpForRegister(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("fullname", "Geby Abigael");
-        requestBody.put("email", "gabyabigael@gmail.com");
-        requestBody.put("password", "Akucantik88@");
+        requestBody.put("fullname", "Geby Abigael Alexandra");
+        requestBody.put("email", "gabyabigaelalexandra@gmail.com");
+        requestBody.put("password", "Akucantik88!");
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiForRegister());
     }
 
     @Step("I receive valid data for new account")
     public void validateDataNewAccount(){
-        restAssuredThat(response -> response.body("'data'.'Fullname'", equalTo("Geby Abigael")));
+        restAssuredThat(response -> response.body("'data'.'Fullname'", equalTo("Geby Abigael Alexandra")));
     }
 
     //Login
