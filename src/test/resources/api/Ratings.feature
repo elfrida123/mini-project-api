@@ -19,4 +19,4 @@ Feature: Ratings
     Then I receive valid HTTP <responsestatus> response code for invalid give ratings
     Examples:
     | count | responsestatus  |
-    | 2     | 500             |
+    | 2     | 200             |

@@ -21,9 +21,9 @@ public class Authentication {
     @Step("I send POST HTTP Request for register")
     public void sendPostHttpForRegister(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("fullname", "Risda Tampubolon");
-        requestBody.put("email", "elrisda@email.com");
-        requestBody.put("password", "Akucantik88");
+        requestBody.put("fullname", "Elfrida Vii");
+        requestBody.put("email", "terddiam@gmail.com");
+        requestBody.put("password", "Akucantik");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiForRegister());
     }
