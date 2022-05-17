@@ -29,7 +29,7 @@ public class Authentication {
 
     @Step("I receive valid data for new account")
     public void validateDataNewAccount(){
-        restAssuredThat(response -> response.body("'data'.'Fullname'", equalTo("Elfrida Tampubolon")));
+        restAssuredThat(response -> response.body("'data'.'Fullname'", equalTo("Geby Abigael")));
     }
 
     //Login
