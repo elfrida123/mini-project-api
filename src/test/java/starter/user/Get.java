@@ -59,7 +59,7 @@ public class Get {
     // Product by id
     @Step("I set GET api endpoints for products by id")
     public String setGetApiById(){
-        return url + "/products/1468";
+        return url + "/products/1583";
     }
 
     @Step("I send GET HTTP Request for products by id")

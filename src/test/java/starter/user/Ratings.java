@@ -13,7 +13,7 @@ public class Ratings {
 
     @Step("I set GET api endpoints for get ratings")
     public String setGetApiForGetRatings(){
-        return url + "/products/1568/ratings";
+        return url + "/products/1594/ratings";
     }
 
     @Step("I send GET HTTP Request for get ratings")
@@ -24,7 +24,7 @@ public class Ratings {
     // give ratings
     @Step("I set POST api endpoints for give ratings")
     public String setPostApiForGiveRatings(){
-        return url + "/products/1568/ratings";
+        return url + "/products/1594/ratings";
     }
 
     @Step("I send POST HTTP Request for give ratings")
